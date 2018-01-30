@@ -1,2 +1,2 @@
 ## Built by-
-# ech_pichan_ambi
+# echu_pichan_ambi
