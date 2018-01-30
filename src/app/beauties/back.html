@@ -1,0 +1,18 @@
+
+<h1>Aviato_GIRLS</h1>
+<ul class="beauties">
+  <li *ngFor="let beauty of beauties"
+      [class.selected]="beauty.name === 'Jeongyeon'"
+      (click)="onSelect(beauty)">
+    <span class="badge">{{beauty.id}}</span> {{beauty.name}}
+  </li>
+</ul>
+<div *ngIf="selectedBeauty">
+  <div>
+    <label>Bitch:
+      <input [(ngModel)]="selectedBeauty.name" placeholder="name">
+    </label>
+  </div>
+
+
+</div>

@@ -1,0 +1,49 @@
+<body *ngIf="selectedBeauty;else second" class="aa" [background]="a+selectedBeauty.name+b">
+<ul class="beauties">
+  <head>
+    <style>
+    li {
+        display: inline;
+      }
+    </style>
+  </head>
+
+  <li *ngFor="let beauty of beauties"
+
+      [class.selected]="beauty === selectedBeauty"
+      (click)="onSelect(beauty)">
+    <span class="badge">{{beauty.name}}</span>
+  </li>
+</ul>
+
+<div *ngIf="selectedBeauty" ><img class="imga" [src]="a+selectedBeauty.name+b"></div>
+
+<!--<div>
+ <label>name:
+   <input [(ngModel)]="selectedBeauty.name" placeholder="name">
+ </label>
+</div> -->
+
+</body>
+
+<ng-template #second>
+  <body class="aa" background=""">
+  <ul class="beauties">
+    <head>
+      <style>
+        li {
+          display: inline;
+        }
+      </style>
+    </head>
+
+    <li *ngFor="let beauty of beauties"
+
+        [class.selected]="beauty === selectedBeauty"
+        (click)="onSelect(beauty)">
+      <span class="badge">{{beauty.name}}</span>
+    </li>
+  </ul>
+
+</ng-template>
+

@@ -1,0 +1,77 @@
+/* HeroesComponent's private CSS styles */
+.selected {
+  background-color: black;
+  color: Purple;
+}
+body
+{
+  margin: 0em; width: 1500px; height: 768px;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  padding: 0em; }
+.aa {
+  margin: 0em; width: 1500px; height: 768px;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  padding: 0em;
+}
+.aa .imga {
+  width: 1500px;
+  height: 768px;
+  margin: 0em;
+  background-size: cover;
+  padding: 0em;
+}
+.beauties {
+  margin: 0 0 0em 0;
+  list-style-type: none;
+  padding: 0em;
+  width: 90em;
+
+}
+.beauties li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: 3.0em;
+  padding: .0em 0;
+  height: 0em;
+  border-radius: 0px;
+}
+.beauties li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+  padding: 0;
+
+}
+.beauties li:hover {
+  color: black;
+  background-color: #EEE;
+  left: .0em;
+  padding: 0;
+
+}
+.beauties .text {
+  position: relative;
+  top: 0px;
+  padding: 0;
+}
+.aa .beauties .badge {
+  display: inline-block;
+  font-size: medium;
+  color: black;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  line-height: 0em;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 0em;
+  margin-right: 0em;
+  border-radius: 0px 0 0 0px;
+}
