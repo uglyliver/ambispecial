@@ -9,10 +9,10 @@ import { BEAUTIES } from '../mock-beauties';
 export class BeautiesComponent implements OnInit {
   beauties = BEAUTIES;
   selectedBeauty: Beauty;
-  a: string;
-  b: string;
-  a='assets\\images\\';
-  b='.jpg';
+  a: string='assets\\images\\';
+  b: string='.jpg';
+  // a='assets\\images\\';
+  // b='.jpg';
 
 
   constructor() { }
